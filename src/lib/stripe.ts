@@ -6,5 +6,5 @@ export const stripe = new Stripe(secret, {
   apiVersion: '2022-11-15',
   appInfo: {
     name: 'Ignite Shop',
-  }
+  },
 })

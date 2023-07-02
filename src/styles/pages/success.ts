@@ -1,4 +1,4 @@
-import { styled } from "..";
+import { styled } from '..'
 
 export const SuccessContainer = styled('main', {
   display: 'flex',
@@ -31,9 +31,9 @@ export const SuccessContainer = styled('main', {
     fontWeight: 'bold',
 
     '&:hover': {
-      color: '$green300'
-    }
-  }
+      color: '$green300',
+    },
+  },
 })
 
 export const ImageContainer = styled('div', {
@@ -51,5 +51,5 @@ export const ImageContainer = styled('div', {
 
   img: {
     objectFit: 'cover',
-  }
+  },
 })

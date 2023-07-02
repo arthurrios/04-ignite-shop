@@ -1,4 +1,4 @@
-import { styled } from "..";
+import { styled } from '..'
 
 export const HomeContainer = styled('main', {
   display: 'flex',
@@ -8,22 +8,31 @@ export const HomeContainer = styled('main', {
   minHeight: 656,
 })
 
+export const SliderContainer = styled('div', {
+  display: 'flex',
+  gap: '3rem',
+  margin: '0 auto',
+
+  '.embla__slide': {
+    minWidth: '43.5rem',
+  },
+})
+
 export const Product = styled('div', {
   background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
   borderRadius: 8,
-  // padding: '0.25rem',
   cursor: 'pointer',
   position: 'relative',
   overflow: 'hidden',
-  minWidth: 540,
-  
+  width: '100%',
+  minHeight: 656,
 
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 
   img: {
-    objectFit: 'cover'
+    objectFit: 'cover',
   },
 
   footer: {
@@ -45,22 +54,28 @@ export const Product = styled('div', {
     opacity: 0,
     transition: 'all 0.2s ease-in-out',
 
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 4,
+    },
+
     strong: {
       fontSize: '$lg',
-      color: '$gray100'
+      color: '$gray100',
     },
 
     span: {
       fontSize: '$xl',
       fontWeight: 'bold',
-      color: '$green300'
-    }
+      color: '$green300',
+    },
   },
 
   '&:hover': {
     footer: {
       transform: 'translateY(0%)',
       opacity: 1,
-    }
-  }
+    },
+  },
 })

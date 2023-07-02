@@ -9,22 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.10",
+    "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-slider": "^1.1.2",
     "@stitches/react": "^1.2.8",
     "@types/react-dom": "18.2.6",
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
-    "eslint": "8.43.0",
+    "embla-carousel-react": "^8.0.0-rc07",
     "eslint-config-next": "13.4.6",
-    "keen-slider": "^6.8.5",
     "next": "13.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "stripe": "^12.9.0"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "^20.3.1",
     "@types/react": "^18.2.13",
+    "eslint": "^8.44.0",
     "typescript": "^5.1.3"
   }
 }
