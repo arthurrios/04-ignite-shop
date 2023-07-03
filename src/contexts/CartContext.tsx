@@ -9,6 +9,7 @@ export interface IProduct {
   description: string
   defaultPriceId: string
   currency: string
+  unit_amount: number
 }
 
 interface CartContextData {

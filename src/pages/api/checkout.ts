@@ -31,7 +31,9 @@ export default async function handler(
           name: product.name,
           images: [product.imageUrl],
         },
-        unit_amount: product.numberPrice,
+        unit_amount: (product.numberPrice * 100).toFixed(
+          0,
+        ) as unknown as number,
       },
       quantity: 1,
     })),
